@@ -1,0 +1,21 @@
+Mission : 
+
+Mettre en forme les titres 
+Rajouter Source Insee + Info tech
+Rajouter une section pour la selection des variables importanes 
+	Mutual Information
+	Ch-Square
+	Variance Treshold
+	ANOVA
+	On passe de 2500 colonne a 700 sans baisser la précision
+	test effectuer grace a des seuils 
+	On supprime les variables qui ne passe pas 3 test 
+Equilibrage des classes 
+Rajouter des graphe interressant 
+Utiliser un humanizer sur tout les textes 
+Lister les modeles utiliser 
+Developper la Cross Validation
+Parler de l'hyperoptimisation avec hyperopt et optuna et de la grille de recherche 
+parler de la performance des VMs
+
+Mémoires : 
