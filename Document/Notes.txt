@@ -10,5 +10,6 @@ Mettre en forme les titres
 Afficher des chiffres 
 	Taille du DataSet avant et apres segemntation
 	metriques 
+Revoir le plan
 
 Mémoires : 
