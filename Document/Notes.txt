@@ -2,6 +2,10 @@ Mission :
 
 Rajouter des graphe interressant 
 Utiliser un humanizer sur tout les textes 
+	https://aihumanizer.ai/fr
+	https://quillbot.com/fr/detecteur-ia
+	https://smodin.io/fr/detecteur-de-contenu-ia
+	https://undetectable.ai/?_by=v1n6a
 Lister les modeles utiliser 
 Developper la Cross Validation : rajouter image 
 Parler de l'hyperoptimisation avec hyperopt et optuna et de la grille de recherche 
@@ -13,3 +17,7 @@ Afficher des chiffres
 Revoir le plan
 
 Mémoires : 
+
+Revoir/Verifier les limitations par études 
+Analyser deux études avec des cas plus specifiques avec les conclusions 
+Conclusions interressantes des études 
