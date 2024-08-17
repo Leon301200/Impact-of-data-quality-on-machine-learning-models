@@ -1,5 +1,6 @@
 # Fonction pour la Complétude
 
+import numpy as np
 import pandas as pd
 from sklearn.experimental import enable_iterative_imputer
 from sklearn.impute import SimpleImputer, IterativeImputer, KNNImputer
@@ -7,35 +8,46 @@ from sklearn.tree import DecisionTreeRegressor, DecisionTreeClassifier
 
 
 # Imputation pour les données numériques
-def impute_numerical_mean(df):
+def impute_numerical_by_delete(df):
+    df_cleaned = df.copy()
+    numerical_cols = df_cleaned.select_dtypes(include=np.number).columns
+    df_cleaned = df_cleaned.dropna(subset=numerical_cols)
+    return df_cleaned
+
+def impute_numerical_by_mean(df):
+    df_imputed = df.copy()
     imputer = SimpleImputer(strategy='mean')
-    df[df.select_dtypes(include='number').columns] = imputer.fit_transform(df.select_dtypes(include='number'))
-    return df
+    df_imputed[df_imputed.select_dtypes(include='number').columns] = imputer.fit_transform(df_imputed.select_dtypes(include='number'))
+    return df_imputed
 
-def impute_numerical_median(df):
+def impute_numerical_by_median(df):
+    df_imputed = df.copy()
     imputer = SimpleImputer(strategy='median')
-    df[df.select_dtypes(include='number').columns] = imputer.fit_transform(df.select_dtypes(include='number'))
-    return df
+    df_imputed[df_imputed.select_dtypes(include='number').columns] = imputer.fit_transform(df_imputed.select_dtypes(include='number'))
+    return df_imputed
 
-def impute_numerical_knn(df):
+def impute_numerical_by_knn(df):
+    df_imputed = df.copy()
     imputer = KNNImputer(n_neighbors=5)
-    df[df.select_dtypes(include='number').columns] = imputer.fit_transform(df.select_dtypes(include='number'))
-    return df
+    df_imputed[df_imputed.select_dtypes(include='number').columns] = imputer.fit_transform(df_imputed.select_dtypes(include='number'))
+    return df_imputed
 
-def impute_numerical_multiple(df):
+def impute_numerical_by_multiple(df):
+    df_imputed = df.copy()
     imputer = IterativeImputer()
-    df[df.select_dtypes(include='number').columns] = imputer.fit_transform(df.select_dtypes(include='number'))
-    return df
+    df_imputed[df_imputed.select_dtypes(include='number').columns] = imputer.fit_transform(df_imputed.select_dtypes(include='number'))
+    return df_imputed
 
-def impute_numerical_decision_tree(df):
-    numerical_columns = df.select_dtypes(include='number').columns
-    categorical_columns = df.select_dtypes(include='object').columns
+def impute_numerical_by_decision_tree(df):
+    df_imputed = df.copy()
+    numerical_columns = df_imputed.select_dtypes(include='number').columns
+    categorical_columns = df_imputed.select_dtypes(include='object').columns
 
     for col in numerical_columns:
-        if df[col].isnull().sum() > 0:
+        if df_imputed[col].isnull().sum() > 0:
             # Séparer les données connues et inconnues
-            known_data = df[df[col].notna()]
-            unknown_data = df[df[col].isna()]
+            known_data = df_imputed[df_imputed[col].notna()]
+            unknown_data = df_imputed[df_imputed[col].isna()]
 
             if not unknown_data.empty:
                 # Convertir les colonnes catégoriques en dummies
@@ -50,26 +62,43 @@ def impute_numerical_decision_tree(df):
                 model.fit(known_data_dummies.drop(columns=[col]), known_data[col])
 
                 # Prédire les valeurs manquantes et les remplacer
-                df.loc[df[col].isna(), col] = model.predict(unknown_data_dummies.drop(columns=[col]))
+                df_imputed.loc[df_imputed[col].isna(), col] = model.predict(unknown_data_dummies.drop(columns=[col]))
 
-    return df
+    return df_imputed
 
 
 # Imputation pour les données catégoriques
-def impute_categorical_mode(df):
+def impute_categorical_by_delete(df):
+    df_cleaned = df.copy()
+    categorical_cols = df_cleaned.select_dtypes(include='object').columns
+    df_cleaned = df_cleaned.dropna(subset=categorical_cols)
+    return df_cleaned
+
+def impute_categorical_by_mode(df):
+    df_imputed = df.copy()
     imputer = SimpleImputer(strategy='most_frequent')
-    df[df.select_dtypes(include='object').columns] = imputer.fit_transform(df.select_dtypes(include='object'))
-    return df
+    df_imputed[df_imputed.select_dtypes(include='object').columns] = imputer.fit_transform(df_imputed.select_dtypes(include='object'))
+    return df_imputed
 
-def impute_categorical_new_category(df):
-    df = df.fillna('Missing')
-    return df
+def impute_categorical_by_new_category(df):
+    df_imputed = df.copy()
+    df_imputed = df_imputed.fillna('Missing')
+    return df_imputed
 
-def impute_categorical_decision_tree(df):
-    # Créer une copie du dataframe pour ne pas modifier l'original
+def impute_categorical_by_hot_deck(df):
+    df_imputed = df.copy()
+    for col in df_imputed.columns:
+        missing_indices = df_imputed[col].isna()
+        if missing_indices.any():
+            available_values = df_imputed[col].dropna().values
+            imputed_values = np.random.choice(available_values, size=missing_indices.sum())
+            df_imputed.loc[missing_indices, col] = imputed_values
+    return df_imputed
+
+def impute_categorical_by_decision_tree(df):
+
     df_imputed = df.copy()
 
-    # Sélectionner les colonnes de type 'object'
     object_columns = df_imputed.select_dtypes(include=['object']).columns
 
     for col in object_columns:
