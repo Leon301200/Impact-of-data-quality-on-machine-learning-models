@@ -1,0 +1,68 @@
+{
+  "models": [
+    {
+      "model": "XGBoost",
+      "pollution_metrics": [
+        {
+          "pollution_percentage": 0,
+          "metrics": {
+            "accuracy": 0.95,
+            "precision": 0.90,
+            "recall": 0.88,
+            "f1_score": 0.89
+          }
+        },
+        {
+          "pollution_percentage": 10,
+          "metrics": {
+            "accuracy": 0.92,
+            "precision": 0.88,
+            "recall": 0.85,
+            "f1_score": 0.86
+          }
+        },
+        {
+          "pollution_percentage": 20,
+          "metrics": {
+            "accuracy": 0.89,
+            "precision": 0.85,
+            "recall": 0.82,
+            "f1_score": 0.83
+          }
+        }
+      ]
+    },
+    {
+      "model": "CatBoost",
+      "pollution_metrics": [
+        {
+          "pollution_percentage": 0,
+          "metrics": {
+            "accuracy": 0.96,
+            "precision": 0.91,
+            "recall": 0.89,
+            "f1_score": 0.90
+          }
+        },
+        {
+          "pollution_percentage": 10,
+          "metrics": {
+            "accuracy": 0.93,
+            "precision": 0.89,
+            "recall": 0.86,
+            "f1_score": 0.87
+          }
+        },
+        {
+          "pollution_percentage": 20,
+          "metrics": {
+            "accuracy": 0.90,
+            "precision": 0.86,
+            "recall": 0.83,
+            "f1_score": 0.84
+          }
+        }
+      ]
+    }
+  ]
+}
