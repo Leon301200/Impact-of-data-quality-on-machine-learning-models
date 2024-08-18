@@ -1,68 +1,90 @@
 {
-  "models": [
-    {
-      "model": "XGBoost",
-      "pollution_metrics": [
+    "models": [
         {
-          "pollution_percentage": 0,
-          "metrics": {
-            "accuracy": 0.95,
-            "precision": 0.90,
-            "recall": 0.88,
-            "f1_score": 0.89
-          }
-        },
-        {
-          "pollution_percentage": 10,
-          "metrics": {
-            "accuracy": 0.92,
-            "precision": 0.88,
-            "recall": 0.85,
-            "f1_score": 0.86
-          }
-        },
-        {
-          "pollution_percentage": 20,
-          "metrics": {
-            "accuracy": 0.89,
-            "precision": 0.85,
-            "recall": 0.82,
-            "f1_score": 0.83
-          }
+            "model": "XGBoost",
+            "pollution_metrics": [
+                {
+                    "pollution_percentage": 0,
+                    "metrics": {
+                        "accuracy": 0.9480696785085609,
+                        "precision": 0.7566405966833175,
+                        "recall": 0.6171010336745357,
+                        "f1_score": 0.6567297452180738
+                    }
+                },
+                {
+                    "pollution_percentage": 10,
+                    "metrics": {
+                        "accuracy": 0.9477810901983105,
+                        "precision": 0.7541681235274196,
+                        "recall": 0.6133716218216015,
+                        "f1_score": 0.6525424996671407
+                    }
+                },
+                {
+                    "pollution_percentage": 20,
+                    "metrics": {
+                        "accuracy": 0.9475493981655696,
+                        "precision": 0.7512848045422994,
+                        "recall": 0.6126178887852276,
+                        "f1_score": 0.6513393597793942
+                    }
+                },
+                {
+                    "pollution_percentage": 30,
+                    "metrics": {
+                        "accuracy": 0.9477770257359474,
+                        "precision": 0.7535858284340631,
+                        "recall": 0.616104657363714,
+                        "f1_score": 0.6552160077160899
+                    }
+                },
+                {
+                    "pollution_percentage": 40,
+                    "metrics": {
+                        "accuracy": 0.9479274148911602,
+                        "precision": 0.7550674446546707,
+                        "recall": 0.6169205936343941,
+                        "f1_score": 0.6562845985501211
+                    }
+                },
+                {
+                    "pollution_percentage": 50,
+                    "metrics": {
+                        "accuracy": 0.9479639962915437,
+                        "precision": 0.7556414131390088,
+                        "recall": 0.6159931455696175,
+                        "f1_score": 0.6554710111381992
+                    }
+                },
+                {
+                    "pollution_percentage": 60,
+                    "metrics": {
+                        "accuracy": 0.9474355914846398,
+                        "precision": 0.7502386902688325,
+                        "recall": 0.6121368985048062,
+                        "f1_score": 0.6506977059927014
+                    }
+                },
+                {
+                    "pollution_percentage": 70,
+                    "metrics": {
+                        "accuracy": 0.947732311858708,
+                        "precision": 0.7528700551349837,
+                        "recall": 0.6166420741502426,
+                        "f1_score": 0.655657186577179
+                    }
+                },
+                {
+                    "pollution_percentage": 80,
+                    "metrics": {
+                        "accuracy": 0.947301454726774,
+                        "precision": 0.7483140795537937,
+                        "recall": 0.6144504790027978,
+                        "f1_score": 0.6527068351690308
+                    }
+                }
+            ]
         }
-      ]
-    },
-    {
-      "model": "CatBoost",
-      "pollution_metrics": [
-        {
-          "pollution_percentage": 0,
-          "metrics": {
-            "accuracy": 0.96,
-            "precision": 0.91,
-            "recall": 0.89,
-            "f1_score": 0.90
-          }
-        },
-        {
-          "pollution_percentage": 10,
-          "metrics": {
-            "accuracy": 0.93,
-            "precision": 0.89,
-            "recall": 0.86,
-            "f1_score": 0.87
-          }
-        },
-        {
-          "pollution_percentage": 20,
-          "metrics": {
-            "accuracy": 0.90,
-            "precision": 0.86,
-            "recall": 0.83,
-            "f1_score": 0.84
-          }
-        }
-      ]
-    }
-  ]
+    ]
 }
