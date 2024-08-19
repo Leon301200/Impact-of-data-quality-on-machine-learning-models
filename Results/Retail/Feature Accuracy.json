@@ -1,68 +1,72 @@
 {
-  "models": [
-    {
-      "model": "XGBoost",
-      "pollution_metrics": [
+    "models": [
         {
-          "pollution_percentage": 0,
-          "metrics": {
-            "accuracy": 0.95,
-            "precision": 0.90,
-            "recall": 0.88,
-            "f1_score": 0.89
-          }
-        },
-        {
-          "pollution_percentage": 10,
-          "metrics": {
-            "accuracy": 0.92,
-            "precision": 0.88,
-            "recall": 0.85,
-            "f1_score": 0.86
-          }
-        },
-        {
-          "pollution_percentage": 20,
-          "metrics": {
-            "accuracy": 0.89,
-            "precision": 0.85,
-            "recall": 0.82,
-            "f1_score": 0.83
-          }
+            "model": "HDBSCAN",
+            "pollution_metrics": [
+                {
+                    "pollution_percentage": 0,
+                    "metrics": {
+                        "stability indexes": 1.0,
+                        "ARI score": 1.0
+                    }
+                },
+                {
+                    "pollution_percentage": 10,
+                    "metrics": {
+                        "stability indexes": 0.214613265776473,
+                        "ARI score": 0.03545072485236487
+                    }
+                },
+                {
+                    "pollution_percentage": 20,
+                    "metrics": {
+                        "stability indexes": 0.19519984074574462,
+                        "ARI score": 0.035001614743071056
+                    }
+                },
+                {
+                    "pollution_percentage": 30,
+                    "metrics": {
+                        "stability indexes": 0.1802516345548443,
+                        "ARI score": 0.033702834268769515
+                    }
+                },
+                {
+                    "pollution_percentage": 40,
+                    "metrics": {
+                        "stability indexes": 0.1676107325099193,
+                        "ARI score": 0.032596219787324666
+                    }
+                },
+                {
+                    "pollution_percentage": 50,
+                    "metrics": {
+                        "stability indexes": 0.15589183883224034,
+                        "ARI score": 0.03125966419934341
+                    }
+                },
+                {
+                    "pollution_percentage": 60,
+                    "metrics": {
+                        "stability indexes": 0.14642476158708526,
+                        "ARI score": 0.030218890261719488
+                    }
+                },
+                {
+                    "pollution_percentage": 70,
+                    "metrics": {
+                        "stability indexes": 0.13716032932765648,
+                        "ARI score": 0.029105837332701653
+                    }
+                },
+                {
+                    "pollution_percentage": 80,
+                    "metrics": {
+                        "stability indexes": 0.12805480602261105,
+                        "ARI score": 0.028171015650492903
+                    }
+                }
+            ]
         }
-      ]
-    },
-    {
-      "model": "CatBoost",
-      "pollution_metrics": [
-        {
-          "pollution_percentage": 0,
-          "metrics": {
-            "accuracy": 0.96,
-            "precision": 0.91,
-            "recall": 0.89,
-            "f1_score": 0.90
-          }
-        },
-        {
-          "pollution_percentage": 10,
-          "metrics": {
-            "accuracy": 0.93,
-            "precision": 0.89,
-            "recall": 0.86,
-            "f1_score": 0.87
-          }
-        },
-        {
-          "pollution_percentage": 20,
-          "metrics": {
-            "accuracy": 0.90,
-            "precision": 0.86,
-            "recall": 0.83,
-            "f1_score": 0.84
-          }
-        }
-      ]
-    }
-  ]
+    ]
 }

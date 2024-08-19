@@ -1,68 +1,113 @@
 {
-  "models": [
-    {
-      "model": "XGBoost",
-      "pollution_metrics": [
+    "models": [
         {
-          "pollution_percentage": 0,
-          "metrics": {
-            "accuracy": 0.95,
-            "precision": 0.90,
-            "recall": 0.88,
-            "f1_score": 0.89
-          }
+            "model": "XGBoost",
+            "pollution_metrics": [
+                {
+                    "pollution_percentage": 0,
+                    "metrics": {
+                        "mean_squared_error": 2408.0270939047405,
+                        "mean_absolute_error": 31.47559656248677,
+                        "r2_score": 0.6877563234003763
+                    }
+                },
+                {
+                    "pollution_percentage": 10,
+                    "metrics": {
+                        "mean_squared_error": 3107.0444132970797,
+                        "mean_absolute_error": 36.721950312046786,
+                        "r2_score": 0.5971122637668915
+                    }
+                },
+                {
+                    "pollution_percentage": 20,
+                    "metrics": {
+                        "mean_squared_error": 3715.339229278828,
+                        "mean_absolute_error": 41.12823611005861,
+                        "r2_score": 0.5182322957111994
+                    }
+                },
+                {
+                    "pollution_percentage": 30.0,
+                    "metrics": {
+                        "mean_squared_error": 4233.904052376805,
+                        "mean_absolute_error": 44.86403604626889,
+                        "r2_score": 0.450998632539137
+                    }
+                },
+                {
+                    "pollution_percentage": 40.0,
+                    "metrics": {
+                        "mean_squared_error": 4714.387223407875,
+                        "mean_absolute_error": 48.23881670076371,
+                        "r2_score": 0.38868807474736294
+                    }
+                },
+                {
+                    "pollution_percentage": 50.0,
+                    "metrics": {
+                        "mean_squared_error": 5156.29667347757,
+                        "mean_absolute_error": 51.43071976418562,
+                        "r2_score": 0.33139255016430197
+                    }
+                },
+                {
+                    "pollution_percentage": 60.0,
+                    "metrics": {
+                        "mean_squared_error": 5527.769389759595,
+                        "mean_absolute_error": 54.16991238864769,
+                        "r2_score": 0.28321823413638275
+                    }
+                },
+                {
+                    "pollution_percentage": 70.0,
+                    "metrics": {
+                        "mean_squared_error": 5878.7241457254595,
+                        "mean_absolute_error": 56.764177876457346,
+                        "r2_score": 0.23770226706681852
+                    }
+                },
+                {
+                    "pollution_percentage": 80.0,
+                    "metrics": {
+                        "mean_squared_error": 6181.35172778508,
+                        "mean_absolute_error": 59.05673156086566,
+                        "r2_score": 0.19846790704626951
+                    }
+                }
+            ]
         },
         {
-          "pollution_percentage": 10,
-          "metrics": {
-            "accuracy": 0.92,
-            "precision": 0.88,
-            "recall": 0.85,
-            "f1_score": 0.86
-          }
-        },
-        {
-          "pollution_percentage": 20,
-          "metrics": {
-            "accuracy": 0.89,
-            "precision": 0.85,
-            "recall": 0.82,
-            "f1_score": 0.83
-          }
+            "model": "CatBoost",
+            "pollution_metrics": [
+                {
+                    "pollution_percentage": 0,
+                    "metrics": {
+                        "accuracy": 0.96,
+                        "precision": 0.91,
+                        "recall": 0.89,
+                        "f1_score": 0.9
+                    }
+                },
+                {
+                    "pollution_percentage": 10,
+                    "metrics": {
+                        "accuracy": 0.93,
+                        "precision": 0.89,
+                        "recall": 0.86,
+                        "f1_score": 0.87
+                    }
+                },
+                {
+                    "pollution_percentage": 20,
+                    "metrics": {
+                        "accuracy": 0.9,
+                        "precision": 0.86,
+                        "recall": 0.83,
+                        "f1_score": 0.84
+                    }
+                }
+            ]
         }
-      ]
-    },
-    {
-      "model": "CatBoost",
-      "pollution_metrics": [
-        {
-          "pollution_percentage": 0,
-          "metrics": {
-            "accuracy": 0.96,
-            "precision": 0.91,
-            "recall": 0.89,
-            "f1_score": 0.90
-          }
-        },
-        {
-          "pollution_percentage": 10,
-          "metrics": {
-            "accuracy": 0.93,
-            "precision": 0.89,
-            "recall": 0.86,
-            "f1_score": 0.87
-          }
-        },
-        {
-          "pollution_percentage": 20,
-          "metrics": {
-            "accuracy": 0.90,
-            "precision": 0.86,
-            "recall": 0.83,
-            "f1_score": 0.84
-          }
-        }
-      ]
-    }
-  ]
+    ]
 }
