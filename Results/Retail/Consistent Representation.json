@@ -1,68 +1,176 @@
 {
-  "models": [
-    {
-      "model": "XGBoost",
-      "pollution_metrics": [
+    "models": [
         {
-          "pollution_percentage": 0,
-          "metrics": {
-            "accuracy": 0.95,
-            "precision": 0.90,
-            "recall": 0.88,
-            "f1_score": 0.89
-          }
+            "model": "HDBSCAN",
+            "pollution_metrics": [
+                {
+                    "pollution_percentage": 0,
+                    "metrics": {
+                        "stability indexes": 1.0,
+                        "ARI score": 1.0,
+                        "Cluster_Overlap_Size": 1.0,
+                        "Cluster_Size_Variance": 1.0
+                    }
+                },
+                {
+                    "pollution_percentage": 10,
+                    "metrics": {
+                        "stability indexes": 0.7541388370283825,
+                        "ARI score": 0.4293629621342761,
+                        "Cluster_Overlap_Size": 418112968.5475,
+                        "Cluster_Size_Variance": 418112968.5475
+                    }
+                },
+                {
+                    "pollution_percentage": 20,
+                    "metrics": {
+                        "stability indexes": 0.28754292661468833,
+                        "ARI score": 0.03864403372746724,
+                        "Cluster_Overlap_Size": 9960187888.6875,
+                        "Cluster_Size_Variance": 9960187888.6875
+                    }
+                },
+                {
+                    "pollution_percentage": 30,
+                    "metrics": {
+                        "stability indexes": 0.28753290049011143,
+                        "ARI score": 0.03864645106356425,
+                        "Cluster_Overlap_Size": 10880755768.222223,
+                        "Cluster_Size_Variance": 10880755768.222223
+                    }
+                },
+                {
+                    "pollution_percentage": 40,
+                    "metrics": {
+                        "stability indexes": 0.28760875261758423,
+                        "ARI score": 0.03865001846889397,
+                        "Cluster_Overlap_Size": 10880788544.888891,
+                        "Cluster_Size_Variance": 10880788544.888891
+                    }
+                },
+                {
+                    "pollution_percentage": 50,
+                    "metrics": {
+                        "stability indexes": 0.2875499500097643,
+                        "ARI score": 0.038649060441771244,
+                        "Cluster_Overlap_Size": 10880755768.222223,
+                        "Cluster_Size_Variance": 10880755768.222223
+                    }
+                },
+                {
+                    "pollution_percentage": 60,
+                    "metrics": {
+                        "stability indexes": 0.2875834579132903,
+                        "ARI score": 0.038648360879496337,
+                        "Cluster_Overlap_Size": 10880788544.888891,
+                        "Cluster_Size_Variance": 10880788544.888891
+                    }
+                },
+                {
+                    "pollution_percentage": 70,
+                    "metrics": {
+                        "stability indexes": 0.26257572565770293,
+                        "ARI score": 0.05302160815511133,
+                        "Cluster_Overlap_Size": 3219152331.805556,
+                        "Cluster_Size_Variance": 3219152331.805556
+                    }
+                },
+                {
+                    "pollution_percentage": 80,
+                    "metrics": {
+                        "stability indexes": 0.287530125826026,
+                        "ARI score": 0.038648762407423126,
+                        "Cluster_Overlap_Size": 10880736118.222223,
+                        "Cluster_Size_Variance": 10880736118.222223
+                    }
+                }
+            ]
         },
         {
-          "pollution_percentage": 10,
-          "metrics": {
-            "accuracy": 0.92,
-            "precision": 0.88,
-            "recall": 0.85,
-            "f1_score": 0.86
-          }
-        },
-        {
-          "pollution_percentage": 20,
-          "metrics": {
-            "accuracy": 0.89,
-            "precision": 0.85,
-            "recall": 0.82,
-            "f1_score": 0.83
-          }
+            "model": "DBSCAN",
+            "pollution_metrics": [
+                {
+                    "pollution_percentage": 0,
+                    "metrics": {
+                        "stability indexes": 1.0,
+                        "ARI score": 1.0,
+                        "Cluster_Overlap_Size": 1.0,
+                        "Cluster_Size_Variance": 1.0
+                    }
+                },
+                {
+                    "pollution_percentage": 10,
+                    "metrics": {
+                        "stability indexes": 0.4143235818489962,
+                        "ARI score": 0.17335828206099238,
+                        "Cluster_Overlap_Size": 10241836299.6875,
+                        "Cluster_Size_Variance": 10241836299.6875
+                    }
+                },
+                {
+                    "pollution_percentage": 20,
+                    "metrics": {
+                        "stability indexes": 0.4143606084085091,
+                        "ARI score": 0.17336111944450133,
+                        "Cluster_Overlap_Size": 9687185352.25,
+                        "Cluster_Size_Variance": 9687185352.25
+                    }
+                },
+                {
+                    "pollution_percentage": 30,
+                    "metrics": {
+                        "stability indexes": 0.4143606084085091,
+                        "ARI score": 0.17336111944450133,
+                        "Cluster_Overlap_Size": 9687185352.25,
+                        "Cluster_Size_Variance": 9687185352.25
+                    }
+                },
+                {
+                    "pollution_percentage": 40,
+                    "metrics": {
+                        "stability indexes": 0.4143606084085091,
+                        "ARI score": 0.17336111944450133,
+                        "Cluster_Overlap_Size": 9687185352.25,
+                        "Cluster_Size_Variance": 9687185352.25
+                    }
+                },
+                {
+                    "pollution_percentage": 50,
+                    "metrics": {
+                        "stability indexes": 0.4143606084085091,
+                        "ARI score": 0.17336111944450133,
+                        "Cluster_Overlap_Size": 9687185352.25,
+                        "Cluster_Size_Variance": 9687185352.25
+                    }
+                },
+                {
+                    "pollution_percentage": 60,
+                    "metrics": {
+                        "stability indexes": 0.4143606084085091,
+                        "ARI score": 0.17336111944450133,
+                        "Cluster_Overlap_Size": 9687185352.25,
+                        "Cluster_Size_Variance": 9687185352.25
+                    }
+                },
+                {
+                    "pollution_percentage": 70,
+                    "metrics": {
+                        "stability indexes": 0.4143606084085091,
+                        "ARI score": 0.17336111944450133,
+                        "Cluster_Overlap_Size": 9687185352.25,
+                        "Cluster_Size_Variance": 9687185352.25
+                    }
+                },
+                {
+                    "pollution_percentage": 80,
+                    "metrics": {
+                        "stability indexes": 0.4143606084085091,
+                        "ARI score": 0.17336111944450133,
+                        "Cluster_Overlap_Size": 9687185352.25,
+                        "Cluster_Size_Variance": 9687185352.25
+                    }
+                }
+            ]
         }
-      ]
-    },
-    {
-      "model": "CatBoost",
-      "pollution_metrics": [
-        {
-          "pollution_percentage": 0,
-          "metrics": {
-            "accuracy": 0.96,
-            "precision": 0.91,
-            "recall": 0.89,
-            "f1_score": 0.90
-          }
-        },
-        {
-          "pollution_percentage": 10,
-          "metrics": {
-            "accuracy": 0.93,
-            "precision": 0.89,
-            "recall": 0.86,
-            "f1_score": 0.87
-          }
-        },
-        {
-          "pollution_percentage": 20,
-          "metrics": {
-            "accuracy": 0.90,
-            "precision": 0.86,
-            "recall": 0.83,
-            "f1_score": 0.84
-          }
-        }
-      ]
-    }
-  ]
+    ]
 }

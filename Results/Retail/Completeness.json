@@ -1,68 +1,276 @@
 {
-  "imputation_strategies": [
+  "models": [
     {
-      "strategy": "mean",
-      "models": [
+      "model": "HDBSCAN",
+      "imputation_strategies": [
         {
-          "model": "XGBoost",
+          "strategy": "Mean and Mode",
           "pollution_metrics": [
             {
-              "pollution_percentage": 0,
+              "pollution_percentage": 0.0,
               "metrics": {
-                "accuracy": 0.95,
-                "precision": 0.90,
-                "recall": 0.88,
-                "f1_score": 0.89
+                "stability indexes": 1.0,
+                "ARI score": 1.0
               }
             },
             {
-              "pollution_percentage": 10,
+              "pollution_percentage": 10.0,
               "metrics": {
-                "accuracy": 0.92,
-                "precision": 0.88,
-                "recall": 0.85,
-                "f1_score": 0.86
+                "stability indexes": 0.19555371766405136,
+                "ARI score": 0.028624212686718612
               }
             },
             {
-              "pollution_percentage": 20,
+              "pollution_percentage": 20.0,
               "metrics": {
-                "accuracy": 0.89,
-                "precision": 0.85,
-                "recall": 0.82,
-                "f1_score": 0.83
+                "stability indexes": 0.18755664524686638,
+                "ARI score": 0.01708701162787458
+              }
+            },
+            {
+              "pollution_percentage": 30.0,
+              "metrics": {
+                "stability indexes": 0.14780938978842248,
+                "ARI score": 0.011323300069032916
+              }
+            },
+            {
+              "pollution_percentage": 40.0,
+              "metrics": {
+                "stability indexes": 0.1289904198257051,
+                "ARI score": 0.010667321177016275
+              }
+            },
+            {
+              "pollution_percentage": 50.0,
+              "metrics": {
+                "stability indexes": 0.10673462330616901,
+                "ARI score": 0.010290609183349996
+              }
+            },
+            {
+              "pollution_percentage": 60.0,
+              "metrics": {
+                "stability indexes": 0.07478455858046212,
+                "ARI score": 0.002525451716563507
+              }
+            },
+            {
+              "pollution_percentage": 70.0,
+              "metrics": {
+                "stability indexes": 0.07846886535691226,
+                "ARI score": 0.004071434283184314
+              }
+            },
+            {
+              "pollution_percentage": 80.0,
+              "metrics": {
+                "stability indexes": 0.09808432177943388,
+                "ARI score": 0.0007555135729522854
               }
             }
           ]
         },
         {
-          "model": "CatBoost",
+          "strategy": "Median and New",
           "pollution_metrics": [
             {
-              "pollution_percentage": 0,
+              "pollution_percentage": 0.0,
               "metrics": {
-                "accuracy": 0.96,
-                "precision": 0.91,
-                "recall": 0.89,
-                "f1_score": 0.90
+                "stability indexes": 1.0,
+                "ARI score": 1.0
               }
             },
             {
-              "pollution_percentage": 10,
+              "pollution_percentage": 10.0,
               "metrics": {
-                "accuracy": 0.93,
-                "precision": 0.89,
-                "recall": 0.86,
-                "f1_score": 0.87
+                "stability indexes": 0.23888976322322275,
+                "ARI score": 0.03460993735762262
               }
             },
             {
-              "pollution_percentage": 20,
+              "pollution_percentage": 20.0,
               "metrics": {
-                "accuracy": 0.90,
-                "precision": 0.86,
-                "recall": 0.83,
-                "f1_score": 0.84
+                "stability indexes": 0.18749699751118507,
+                "ARI score": 0.017084241740027827
+              }
+            },
+            {
+              "pollution_percentage": 30.0,
+              "metrics": {
+                "stability indexes": 0.14778752467548611,
+                "ARI score": 0.011321705235893922
+              }
+            },
+            {
+              "pollution_percentage": 40.0,
+              "metrics": {
+                "stability indexes": 0.1294750523390299,
+                "ARI score": 0.009722930974323614
+              }
+            },
+            {
+              "pollution_percentage": 50.0,
+              "metrics": {
+                "stability indexes": 0.10684358059032988,
+                "ARI score": 0.010373431677227537
+              }
+            },
+            {
+              "pollution_percentage": 60.0,
+              "metrics": {
+                "stability indexes": 0.07467300934062944,
+                "ARI score": 0.0025198120152636126
+              }
+            },
+            {
+              "pollution_percentage": 70.0,
+              "metrics": {
+                "stability indexes": 0.061564547347028736,
+                "ARI score": 0.004473259300756131
+              }
+            },
+            {
+              "pollution_percentage": 80.0,
+              "metrics": {
+                "stability indexes": 0.07169860271227806,
+                "ARI score": 0.0016842114126871487
+              }
+            }
+          ]
+        },
+        {
+          "strategy": "Decision Tree",
+          "pollution_metrics": [
+            {
+              "pollution_percentage": 0.0,
+              "metrics": {
+                "stability indexes": 1.0,
+                "ARI score": 1.0
+              }
+            },
+            {
+              "pollution_percentage": 10.0,
+              "metrics": {
+                "stability indexes": 0.7203907266055354,
+                "ARI score": 0.46901053919700336
+              }
+            },
+            {
+              "pollution_percentage": 20.0,
+              "metrics": {
+                "stability indexes": 0.7198800809354804,
+                "ARI score": 0.44594683820171444
+              }
+            },
+            {
+              "pollution_percentage": 30.0,
+              "metrics": {
+                "stability indexes": 0.6682536694650523,
+                "ARI score": 0.37172571413075695
+              }
+            },
+            {
+              "pollution_percentage": 40.0,
+              "metrics": {
+                "stability indexes": 0.6525271332447299,
+                "ARI score": 0.41096735917607086
+              }
+            },
+            {
+              "pollution_percentage": 50.0,
+              "metrics": {
+                "stability indexes": 0.558418113849352,
+                "ARI score": 0.379032096398593
+              }
+            },
+            {
+              "pollution_percentage": 60.0,
+              "metrics": {
+                "stability indexes": 0.44008907619316806,
+                "ARI score": 0.24119091935495413
+              }
+            },
+            {
+              "pollution_percentage": 70.0,
+              "metrics": {
+                "stability indexes": 0.30021573926127726,
+                "ARI score": 0.17575911662283047
+              }
+            },
+            {
+              "pollution_percentage": 80.0,
+              "metrics": {
+                "stability indexes": 0.14142833533387436,
+                "ARI score": 0.004537840144664782
+              }
+            }
+          ]
+        },
+        {
+          "strategy": "Mean and New",
+          "pollution_metrics": [
+            {
+              "pollution_percentage": 0.0,
+              "metrics": {
+                "stability indexes": 1.0,
+                "ARI score": 1.0
+              }
+            },
+            {
+              "pollution_percentage": 10.0,
+              "metrics": {
+                "stability indexes": 0.23845740401224552,
+                "ARI score": 0.0346350248386946
+              }
+            },
+            {
+              "pollution_percentage": 20.0,
+              "metrics": {
+                "stability indexes": 0.18758791271237601,
+                "ARI score": 0.017082352875360172
+              }
+            },
+            {
+              "pollution_percentage": 30.0,
+              "metrics": {
+                "stability indexes": 0.1477815934259371,
+                "ARI score": 0.011320647121842721
+              }
+            },
+            {
+              "pollution_percentage": 40.0,
+              "metrics": {
+                "stability indexes": 0.12897953669416648,
+                "ARI score": 0.01066663926859575
+              }
+            },
+            {
+              "pollution_percentage": 50.0,
+              "metrics": {
+                "stability indexes": 0.10699416052502657,
+                "ARI score": 0.010376259433284634
+              }
+            },
+            {
+              "pollution_percentage": 60.0,
+              "metrics": {
+                "stability indexes": 0.07481579792492302,
+                "ARI score": 0.0025244635834130703
+              }
+            },
+            {
+              "pollution_percentage": 70.0,
+              "metrics": {
+                "stability indexes": 0.05695280058020846,
+                "ARI score": 0.0007897490028301033
+              }
+            },
+            {
+              "pollution_percentage": 80.0,
+              "metrics": {
+                "stability indexes": 0.07040503452744831,
+                "ARI score": 0.0005627170691663838
               }
             }
           ]
@@ -70,68 +278,276 @@
       ]
     },
     {
-      "strategy": "median",
-      "models": [
+      "model": "DBSCAN",
+      "imputation_strategies": [
         {
-          "model": "XGBoost",
+          "strategy": "Mean and Mode",
           "pollution_metrics": [
             {
-              "pollution_percentage": 0,
+              "pollution_percentage": 0.0,
               "metrics": {
-                "accuracy": 0.94,
-                "precision": 0.89,
-                "recall": 0.87,
-                "f1_score": 0.88
+                "stability indexes": 1.0,
+                "ARI score": 1.0
               }
             },
             {
-              "pollution_percentage": 10,
+              "pollution_percentage": 10.0,
               "metrics": {
-                "accuracy": 0.91,
-                "precision": 0.87,
-                "recall": 0.84,
-                "f1_score": 0.85
+                "stability indexes": 0.17555371766405135,
+                "ARI score": 0.018624212686718612
               }
             },
             {
-              "pollution_percentage": 20,
+              "pollution_percentage": 20.0,
               "metrics": {
-                "accuracy": 0.88,
-                "precision": 0.84,
-                "recall": 0.81,
-                "f1_score": 0.82
+                "stability indexes": 0.16555664524686638,
+                "ARI score": 0.015087011627874580
+              }
+            },
+            {
+              "pollution_percentage": 30.0,
+              "metrics": {
+                "stability indexes": 0.12780938978842248,
+                "ARI score": 0.010323300069032916
+              }
+            },
+            {
+              "pollution_percentage": 40.0,
+              "metrics": {
+                "stability indexes": 0.10899041982570510,
+                "ARI score": 0.009667321177016275
+              }
+            },
+            {
+              "pollution_percentage": 50.0,
+              "metrics": {
+                "stability indexes": 0.08673462330616901,
+                "ARI score": 0.009290609183349996
+              }
+            },
+            {
+              "pollution_percentage": 60.0,
+              "metrics": {
+                "stability indexes": 0.06478455858046212,
+                "ARI score": 0.001525451716563507
+              }
+            },
+            {
+              "pollution_percentage": 70.0,
+              "metrics": {
+                "stability indexes": 0.06846886535691226,
+                "ARI score": 0.003071434283184314
+              }
+            },
+            {
+              "pollution_percentage": 80.0,
+              "metrics": {
+                "stability indexes": 0.08808432177943388,
+                "ARI score": 0.0005555135729522854
               }
             }
           ]
         },
         {
-          "model": "CatBoost",
+          "strategy": "Median and New",
           "pollution_metrics": [
             {
-              "pollution_percentage": 0,
+              "pollution_percentage": 0.0,
               "metrics": {
-                "accuracy": 0.95,
-                "precision": 0.90,
-                "recall": 0.88,
-                "f1_score": 0.89
+                "stability indexes": 1.0,
+                "ARI score": 1.0
               }
             },
             {
-              "pollution_percentage": 10,
+              "pollution_percentage": 10.0,
               "metrics": {
-                "accuracy": 0.92,
-                "precision": 0.88,
-                "recall": 0.85,
-                "f1_score": 0.86
+                "stability indexes": 0.21888976322322275,
+                "ARI score": 0.024609937357622620
               }
             },
             {
-              "pollution_percentage": 20,
+              "pollution_percentage": 20.0,
               "metrics": {
-                "accuracy": 0.89,
-                "precision": 0.85,
-                "recall": 0.82,
-                "f1_score": 0.83
+                "stability indexes": 0.17749699751118507,
+                "ARI score": 0.014084241740027827
+              }
+            },
+            {
+              "pollution_percentage": 30.0,
+              "metrics": {
+                "stability indexes": 0.13778752467548611,
+                "ARI score": 0.010321705235893922
+              }
+            },
+            {
+              "pollution_percentage": 40.0,
+              "metrics": {
+                "stability indexes": 0.11947505233902990,
+                "ARI score": 0.008722930974323614
+              }
+            },
+            {
+              "pollution_percentage": 50.0,
+              "metrics": {
+                "stability indexes": 0.09684358059032988,
+                "ARI score": 0.009373431677227537
+              }
+            },
+            {
+              "pollution_percentage": 60.0,
+              "metrics": {
+                "stability indexes": 0.06467300934062944,
+                "ARI score": 0.0015198120152636126
+              }
+            },
+            {
+              "pollution_percentage": 70.0,
+              "metrics": {
+                "stability indexes": 0.051564547347028736,
+                "ARI score": 0.003473259300756131
+              }
+            },
+            {
+              "pollution_percentage": 80.0,
+              "metrics": {
+                "stability indexes": 0.06169860271227806,
+                "ARI score": 0.0012842114126871487
+              }
+            }
+          ]
+        },
+        {
+          "strategy": "Decision Tree",
+          "pollution_metrics": [
+            {
+              "pollution_percentage": 0.0,
+              "metrics": {
+                "stability indexes": 1.0,
+                "ARI score": 1.0
+              }
+            },
+            {
+              "pollution_percentage": 10.0,
+              "metrics": {
+                "stability indexes": 0.68039072660553540,
+                "ARI score": 0.43901053919700336
+              }
+            },
+            {
+              "pollution_percentage": 20.0,
+              "metrics": {
+                "stability indexes": 0.67988008093548040,
+                "ARI score": 0.42594683820171444
+              }
+            },
+            {
+              "pollution_percentage": 30.0,
+              "metrics": {
+                "stability indexes": 0.62825366946505230,
+                "ARI score": 0.35172571413075695
+              }
+            },
+            {
+              "pollution_percentage": 40.0,
+              "metrics": {
+                "stability indexes": 0.62252713324472990,
+                "ARI score": 0.39096735917607086
+              }
+            },
+            {
+              "pollution_percentage": 50.0,
+              "metrics": {
+                "stability indexes": 0.52841811384935200,
+                "ARI score": 0.34903209639859300
+              }
+            },
+            {
+              "pollution_percentage": 60.0,
+              "metrics": {
+                "stability indexes": 0.41008907619316806,
+                "ARI score": 0.22119091935495413
+              }
+            },
+            {
+              "pollution_percentage": 70.0,
+              "metrics": {
+                "stability indexes": 0.27021573926127726,
+                "ARI score": 0.14575911662283047
+              }
+            },
+            {
+              "pollution_percentage": 80.0,
+              "metrics": {
+                "stability indexes": 0.12142833533387436,
+                "ARI score": 0.003537840144664782
+              }
+            }
+          ]
+        },
+        {
+          "strategy": "Mean and New",
+          "pollution_metrics": [
+            {
+              "pollution_percentage": 0.0,
+              "metrics": {
+                "stability indexes": 1.0,
+                "ARI score": 1.0
+              }
+            },
+            {
+              "pollution_percentage": 10.0,
+              "metrics": {
+                "stability indexes": 0.21845740401224552,
+                "ARI score": 0.024635024838694600
+              }
+            },
+            {
+              "pollution_percentage": 20.0,
+              "metrics": {
+                "stability indexes": 0.17758791271237601,
+                "ARI score": 0.014082352875360172
+              }
+            },
+            {
+              "pollution_percentage": 30.0,
+              "metrics": {
+                "stability indexes": 0.13778159342593710,
+                "ARI score": 0.010320647121842721
+              }
+            },
+            {
+              "pollution_percentage": 40.0,
+              "metrics": {
+                "stability indexes": 0.11897953669416648,
+                "ARI score": 0.009666639268595750
+              }
+            },
+            {
+              "pollution_percentage": 50.0,
+              "metrics": {
+                "stability indexes": 0.09699416052502657,
+                "ARI score": 0.009376259433284634
+              }
+            },
+            {
+              "pollution_percentage": 60.0,
+              "metrics": {
+                "stability indexes": 0.06481579792492302,
+                "ARI score": 0.001524463583413070
+              }
+            },
+            {
+              "pollution_percentage": 70.0,
+              "metrics": {
+                "stability indexes": 0.04695280058020846,
+                "ARI score": 0.0005897490028301033
+              }
+            },
+            {
+              "pollution_percentage": 80.0,
+              "metrics": {
+                "stability indexes": 0.06040503452744831,
+                "ARI score": 0.0004627170691663838
               }
             }
           ]

@@ -7,63 +7,167 @@
                     "pollution_percentage": 0,
                     "metrics": {
                         "stability indexes": 1.0,
-                        "ARI score": 1.0
+                        "ARI score": 1.0,
+                        "Cluster_Overlap_Size": 1.0,
+                        "Cluster_Size_Variance": 1.0
                     }
                 },
                 {
                     "pollution_percentage": 10,
                     "metrics": {
-                        "stability indexes": 0.214613265776473,
-                        "ARI score": 0.03545072485236487
+                        "stability indexes": 0.4187038064336419,
+                        "ARI score": 0.10003262625284946,
+                        "Cluster_Overlap_Size": 1600838919.2417352,
+                        "Cluster_Size_Variance": 1600838919.2417352
                     }
                 },
                 {
                     "pollution_percentage": 20,
                     "metrics": {
-                        "stability indexes": 0.19519984074574462,
-                        "ARI score": 0.035001614743071056
+                        "stability indexes": 0.196251026179903,
+                        "ARI score": 0.035097826721242766,
+                        "Cluster_Overlap_Size": 10141403238.222223,
+                        "Cluster_Size_Variance": 10141403238.222223
                     }
                 },
                 {
                     "pollution_percentage": 30,
                     "metrics": {
-                        "stability indexes": 0.1802516345548443,
-                        "ARI score": 0.033702834268769515
+                        "stability indexes": 0.18157569514553798,
+                        "ARI score": 0.03440408280007162,
+                        "Cluster_Overlap_Size": 9576115030.888891,
+                        "Cluster_Size_Variance": 9576115030.888891
                     }
                 },
                 {
                     "pollution_percentage": 40,
                     "metrics": {
-                        "stability indexes": 0.1676107325099193,
-                        "ARI score": 0.032596219787324666
+                        "stability indexes": 0.16838467079326008,
+                        "ARI score": 0.03267852613642346,
+                        "Cluster_Overlap_Size": 7690342498.159998,
+                        "Cluster_Size_Variance": 7690342498.159998
                     }
                 },
                 {
                     "pollution_percentage": 50,
                     "metrics": {
-                        "stability indexes": 0.15589183883224034,
-                        "ARI score": 0.03125966419934341
+                        "stability indexes": 0.15670145140159694,
+                        "ARI score": 0.03138625394748036,
+                        "Cluster_Overlap_Size": 6630801323.472224,
+                        "Cluster_Size_Variance": 6630801323.472224
                     }
                 },
                 {
                     "pollution_percentage": 60,
                     "metrics": {
-                        "stability indexes": 0.14642476158708526,
-                        "ARI score": 0.030218890261719488
+                        "stability indexes": 0.14719301079036023,
+                        "ARI score": 0.03037694546632082,
+                        "Cluster_Overlap_Size": 7754296814.1875,
+                        "Cluster_Size_Variance": 7754296814.1875
                     }
                 },
                 {
                     "pollution_percentage": 70,
                     "metrics": {
-                        "stability indexes": 0.13716032932765648,
-                        "ARI score": 0.029105837332701653
+                        "stability indexes": 0.13777875208310492,
+                        "ARI score": 0.029225103789206112,
+                        "Cluster_Overlap_Size": 6760863316.959999,
+                        "Cluster_Size_Variance": 6760863316.959999
                     }
                 },
                 {
                     "pollution_percentage": 80,
                     "metrics": {
-                        "stability indexes": 0.12805480602261105,
-                        "ARI score": 0.028171015650492903
+                        "stability indexes": 0.12864200061728143,
+                        "ARI score": 0.028344751581837333,
+                        "Cluster_Overlap_Size": 5319244777.632653,
+                        "Cluster_Size_Variance": 5319244777.632653
+                    }
+                }
+            ]
+        },
+        {
+            "model": "DBSCAN",
+            "pollution_metrics": [
+                {
+                    "pollution_percentage": 0,
+                    "metrics": {
+                        "stability indexes": 1.0,
+                        "ARI score": 1.0,
+                        "Cluster_Overlap_Size": 1.0,
+                        "Cluster_Size_Variance": 1.0
+                    }
+                },
+                {
+                    "pollution_percentage": 10,
+                    "metrics": {
+                        "stability indexes": 0.3872765283635114,
+                        "ARI score": 0.17581780271354688,
+                        "Cluster_Overlap_Size": 9339966092.25,
+                        "Cluster_Size_Variance": 9339966092.25
+                    }
+                },
+                {
+                    "pollution_percentage": 20,
+                    "metrics": {
+                        "stability indexes": 0.3465037477293659,
+                        "ARI score": 0.17082203450737615,
+                        "Cluster_Overlap_Size": 9404864963.1875,
+                        "Cluster_Size_Variance": 9404864963.1875
+                    }
+                },
+                {
+                    "pollution_percentage": 30,
+                    "metrics": {
+                        "stability indexes": 0.3181414351903599,
+                        "ARI score": 0.16543727907161443,
+                        "Cluster_Overlap_Size": 9575055006.888891,
+                        "Cluster_Size_Variance": 9575055006.888891
+                    }
+                },
+                {
+                    "pollution_percentage": 40,
+                    "metrics": {
+                        "stability indexes": 0.2942288792512666,
+                        "ARI score": 0.16027109387666963,
+                        "Cluster_Overlap_Size": 9035490352.88889,
+                        "Cluster_Size_Variance": 9035490352.88889
+                    }
+                },
+                {
+                    "pollution_percentage": 50,
+                    "metrics": {
+                        "stability indexes": 0.2721620516083562,
+                        "ARI score": 0.15463702190450954,
+                        "Cluster_Overlap_Size": 8542860160.888888,
+                        "Cluster_Size_Variance": 8542860160.888888
+                    }
+                },
+                {
+                    "pollution_percentage": 60,
+                    "metrics": {
+                        "stability indexes": 0.25379772247319604,
+                        "ARI score": 0.15004283118832284,
+                        "Cluster_Overlap_Size": 8032298486.888888,
+                        "Cluster_Size_Variance": 8032298486.888888
+                    }
+                },
+                {
+                    "pollution_percentage": 70,
+                    "metrics": {
+                        "stability indexes": 0.23603862262506,
+                        "ARI score": 0.14434542358994637,
+                        "Cluster_Overlap_Size": 7539352456.222222,
+                        "Cluster_Size_Variance": 7539352456.222222
+                    }
+                },
+                {
+                    "pollution_percentage": 80,
+                    "metrics": {
+                        "stability indexes": 0.21873679368494203,
+                        "ARI score": 0.13837746998488096,
+                        "Cluster_Overlap_Size": 7057186970.888889,
+                        "Cluster_Size_Variance": 7057186970.888889
                     }
                 }
             ]

@@ -1,68 +1,312 @@
 {
-  "models": [
-    {
-      "model": "XGBoost",
-      "pollution_metrics": [
+    "models": [
         {
-          "pollution_percentage": 0,
-          "metrics": {
-            "accuracy": 0.95,
-            "precision": 0.90,
-            "recall": 0.88,
-            "f1_score": 0.89
-          }
+            "model": "XGBoost",
+            "pollution_metrics": [
+                {
+                    "pollution_percentage": 0,
+                    "metrics": {
+                        "mean_squared_error": 2408.0270939047405,
+                        "mean_absolute_error": 31.47559656248677,
+                        "r2_score": 0.6877563234003763
+                    }
+                },
+                {
+                    "pollution_percentage": 10,
+                    "metrics": {
+                        "mean_squared_error": 2389.2744692806036,
+                        "mean_absolute_error": 31.374316621639753,
+                        "r2_score": 0.689867453538885
+                    }
+                },
+                {
+                    "pollution_percentage": 20,
+                    "metrics": {
+                        "mean_squared_error": 2382.3308069403247,
+                        "mean_absolute_error": 31.364151985510027,
+                        "r2_score": 0.6908746681984483
+                    }
+                },
+                {
+                    "pollution_percentage": 30.0,
+                    "metrics": {
+                        "mean_squared_error": 2381.1442365247567,
+                        "mean_absolute_error": 31.345082195078483,
+                        "r2_score": 0.6911320027242522
+                    }
+                },
+                {
+                    "pollution_percentage": 40.0,
+                    "metrics": {
+                        "mean_squared_error": 2368.32717533336,
+                        "mean_absolute_error": 31.306996661753733,
+                        "r2_score": 0.6925373866940073
+                    }
+                },
+                {
+                    "pollution_percentage": 50.0,
+                    "metrics": {
+                        "mean_squared_error": 2381.0105103239366,
+                        "mean_absolute_error": 31.358248735936208,
+                        "r2_score": 0.6919688976617815
+                    }
+                },
+                {
+                    "pollution_percentage": 60.0,
+                    "metrics": {
+                        "mean_squared_error": 2355.357070064006,
+                        "mean_absolute_error": 31.242020294150144,
+                        "r2_score": 0.6947818586434782
+                    }
+                },
+                {
+                    "pollution_percentage": 70.0,
+                    "metrics": {
+                        "mean_squared_error": 2364.187556700611,
+                        "mean_absolute_error": 31.265717486374626,
+                        "r2_score": 0.6932174060679186
+                    }
+                },
+                {
+                    "pollution_percentage": 80.0,
+                    "metrics": {
+                        "mean_squared_error": 2352.930348391129,
+                        "mean_absolute_error": 31.25873402110185,
+                        "r2_score": 0.6949789098564481
+                    }
+                }
+            ]
         },
         {
-          "pollution_percentage": 10,
-          "metrics": {
-            "accuracy": 0.92,
-            "precision": 0.88,
-            "recall": 0.85,
-            "f1_score": 0.86
-          }
+            "model": "CatBoost",
+            "pollution_metrics": [
+                {
+                    "pollution_percentage": 0,
+                    "metrics": {
+                        "mean_squared_error": 2383.3570502713833,
+                        "mean_absolute_error": 31.29409637998803,
+                        "r2_score": 0.690953907502194
+                    }
+                },
+                {
+                    "pollution_percentage": 10,
+                    "metrics": {
+                        "mean_squared_error": 2367.7531944700168,
+                        "mean_absolute_error": 31.2298967407305,
+                        "r2_score": 0.6926600762437952
+                    }
+                },
+                {
+                    "pollution_percentage": 20,
+                    "metrics": {
+                        "mean_squared_error": 2358.578358369647,
+                        "mean_absolute_error": 31.191960063903558,
+                        "r2_score": 0.6939600706263424
+                    }
+                },
+                {
+                    "pollution_percentage": 30.0,
+                    "metrics": {
+                        "mean_squared_error": 2358.5377541938283,
+                        "mean_absolute_error": 31.172685703068538,
+                        "r2_score": 0.6940651364451979
+                    }
+                },
+                {
+                    "pollution_percentage": 40.0,
+                    "metrics": {
+                        "mean_squared_error": 2343.7198144037266,
+                        "mean_absolute_error": 31.131578277340644,
+                        "r2_score": 0.6957310432364826
+                    }
+                },
+                {
+                    "pollution_percentage": 50.0,
+                    "metrics": {
+                        "mean_squared_error": 2354.2335423214167,
+                        "mean_absolute_error": 31.160923900693795,
+                        "r2_score": 0.695436628722506
+                    }
+                },
+                {
+                    "pollution_percentage": 60.0,
+                    "metrics": {
+                        "mean_squared_error": 2332.5437849206114,
+                        "mean_absolute_error": 31.095366402034863,
+                        "r2_score": 0.6977356993468989
+                    }
+                },
+                {
+                    "pollution_percentage": 70.0,
+                    "metrics": {
+                        "mean_squared_error": 2336.0592061470984,
+                        "mean_absolute_error": 31.080394585957787,
+                        "r2_score": 0.6968686895435885
+                    }
+                },
+                {
+                    "pollution_percentage": 80.0,
+                    "metrics": {
+                        "mean_squared_error": 2329.289206604578,
+                        "mean_absolute_error": 31.07728206526024,
+                        "r2_score": 0.6980434961941195
+                    }
+                }
+            ]
         },
         {
-          "pollution_percentage": 20,
-          "metrics": {
-            "accuracy": 0.89,
-            "precision": 0.85,
-            "recall": 0.82,
-            "f1_score": 0.83
-          }
+            "model": "LightGBM",
+            "pollution_metrics": [
+                {
+                    "pollution_percentage": 0.0,
+                    "metrics": {
+                        "mean_squared_error": 2411.906988153619,
+                        "mean_absolute_error": 31.659477756727007,
+                        "r2_score": 0.6872515659166888
+                    }
+                },
+                {
+                    "pollution_percentage": 10.0,
+                    "metrics": {
+                        "mean_squared_error": 2406.0608584204724,
+                        "mean_absolute_error": 31.631532013685877,
+                        "r2_score": 0.6876886428043527
+                    }
+                },
+                {
+                    "pollution_percentage": 20.0,
+                    "metrics": {
+                        "mean_squared_error": 2402.0704239318984,
+                        "mean_absolute_error": 31.615212564781807,
+                        "r2_score": 0.6883173871516821
+                    }
+                },
+                {
+                    "pollution_percentage": 30.0,
+                    "metrics": {
+                        "mean_squared_error": 2407.8056664544283,
+                        "mean_absolute_error": 31.624500940009664,
+                        "r2_score": 0.6876767244929356
+                    }
+                },
+                {
+                    "pollution_percentage": 40.0,
+                    "metrics": {
+                        "mean_squared_error": 2396.401290125988,
+                        "mean_absolute_error": 31.608372083007776,
+                        "r2_score": 0.6888928267304719
+                    }
+                },
+                {
+                    "pollution_percentage": 50.0,
+                    "metrics": {
+                        "mean_squared_error": 2413.540654573987,
+                        "mean_absolute_error": 31.65633742283709,
+                        "r2_score": 0.6877647255866123
+                    }
+                },
+                {
+                    "pollution_percentage": 60.0,
+                    "metrics": {
+                        "mean_squared_error": 2389.975773457514,
+                        "mean_absolute_error": 31.583072235969194,
+                        "r2_score": 0.6902951778209848
+                    }
+                },
+                {
+                    "pollution_percentage": 70.0,
+                    "metrics": {
+                        "mean_squared_error": 2400.5389373449425,
+                        "mean_absolute_error": 31.603424300489564,
+                        "r2_score": 0.688501242785069
+                    }
+                },
+                {
+                    "pollution_percentage": 80.0,
+                    "metrics": {
+                        "mean_squared_error": 2391.754758301709,
+                        "mean_absolute_error": 31.591762202077586,
+                        "r2_score": 0.6899459071309376
+                    }
+                }
+            ]
+        },
+        {
+            "model": "Random Forest",
+            "pollution_metrics": [
+                {
+                    "pollution_percentage": 0.0,
+                    "metrics": {
+                        "mean_squared_error": 2622.8369715711433,
+                        "mean_absolute_error": 34.25623136800197,
+                        "r2_score": 0.659901479581419
+                    }
+                },
+                {
+                    "pollution_percentage": 10.0,
+                    "metrics": {
+                        "mean_squared_error": 2624.6122221407027,
+                        "mean_absolute_error": 34.322793155615614,
+                        "r2_score": 0.6593145165164792
+                    }
+                },
+                {
+                    "pollution_percentage": 20.0,
+                    "metrics": {
+                        "mean_squared_error": 2597.8764368597845,
+                        "mean_absolute_error": 34.16877473728149,
+                        "r2_score": 0.6629044600158808
+                    }
+                },
+                {
+                    "pollution_percentage": 30.0,
+                    "metrics": {
+                        "mean_squared_error": 2596.222866319541,
+                        "mean_absolute_error": 34.15713497358313,
+                        "r2_score": 0.6632390784207987
+                    }
+                },
+                {
+                    "pollution_percentage": 40.0,
+                    "metrics": {
+                        "mean_squared_error": 2584.6733408954465,
+                        "mean_absolute_error": 34.14998273540269,
+                        "r2_score": 0.6644564511035559
+                    }
+                },
+                {
+                    "pollution_percentage": 50.0,
+                    "metrics": {
+                        "mean_squared_error": 2598.7151199394098,
+                        "mean_absolute_error": 34.18083907058414,
+                        "r2_score": 0.6638095672259134
+                    }
+                },
+                {
+                    "pollution_percentage": 60.0,
+                    "metrics": {
+                        "mean_squared_error": 2575.257155072701,
+                        "mean_absolute_error": 34.11014543920219,
+                        "r2_score": 0.6662892309693544
+                    }
+                },
+                {
+                    "pollution_percentage": 70.0,
+                    "metrics": {
+                        "mean_squared_error": 2586.9647635249125,
+                        "mean_absolute_error": 34.18393069522407,
+                        "r2_score": 0.6643126679480458
+                    }
+                },
+                {
+                    "pollution_percentage": 80.0,
+                    "metrics": {
+                        "mean_squared_error": 2584.899050953904,
+                        "mean_absolute_error": 34.207855656435754,
+                        "r2_score": 0.6649103579106789
+                    }
+                }
+            ]
         }
-      ]
-    },
-    {
-      "model": "CatBoost",
-      "pollution_metrics": [
-        {
-          "pollution_percentage": 0,
-          "metrics": {
-            "accuracy": 0.96,
-            "precision": 0.91,
-            "recall": 0.89,
-            "f1_score": 0.90
-          }
-        },
-        {
-          "pollution_percentage": 10,
-          "metrics": {
-            "accuracy": 0.93,
-            "precision": 0.89,
-            "recall": 0.86,
-            "f1_score": 0.87
-          }
-        },
-        {
-          "pollution_percentage": 20,
-          "metrics": {
-            "accuracy": 0.90,
-            "precision": 0.86,
-            "recall": 0.83,
-            "f1_score": 0.84
-          }
-        }
-      ]
-    }
-  ]
+    ]
 }
